@@ -95,6 +95,7 @@
         android:text="Sinopsis"
         android:layout_marginLeft="10dp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"/>
@@ -102,6 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvSinopsis"
+        android:textColor="@color/black"
         android:text="Sakura Haruka tidak mau berurusan dengan orang lemah. Dia hanya tertarik pada yang terkuat dari yang kuat. Dia baru saja masuk ke SMA Furin, sebuah sekolah. Sakura Haruka tidak mau berurusan dengan orang lemah. Dia hanya tertarik pada yang terkuat dari yang kuat. Dia baru saja masuk ke SMA Furin, sebuah sekolah. Sakura Haruka tidak mau berurusan dengan orang lemah. Dia hanya tertarik pada yang terkuat dari yang kuat. Dia baru saja masuk ke SMA Furin, sebuah sekolah. Sakura Haruka tidak mau berurusan dengan orang lemah. Dia hanya tertarik pada yang terkuat dari yang kuat. Dia baru saja masuk ke SMA Furin, sebuah sekolah. "
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
