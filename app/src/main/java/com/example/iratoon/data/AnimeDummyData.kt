@@ -44,7 +44,7 @@ object AnimeDummyData {
         ),
         AnimePopular(
             titlePopular = "Oshi No Ko",
-            imgPopular = R.drawable.boruto
+            imgPopular = R.drawable.oshi_no_ko
         ),
     )
 
@@ -80,8 +80,26 @@ object AnimeDummyData {
             episodeTerbaru = "Episode 2"
         ),
         AnimeTerbaru(
-            titleTerbaru = "Slime Taoshite 300-nen Season 2",
-            imgTerbaru = R.drawable.slime,
+            titleTerbaru = "Bye Bye, Earth Season 2",
+            imgTerbaru = R.drawable.bye_bye_earth,
+            ratingTerbaru = "8.55",
+            episodeTerbaru = "Episode 2"
+        ),
+        AnimeTerbaru(
+            titleTerbaru = "Ameku M.D.: Doctor Detective",
+            imgTerbaru = R.drawable.ameku,
+            ratingTerbaru = "8.55",
+            episodeTerbaru = "Episode 2"
+        ),
+        AnimeTerbaru(
+            titleTerbaru = "Blue Exorcist : Beyond The Snow Saga",
+            imgTerbaru = R.drawable.blueexorsist,
+            ratingTerbaru = "8.55",
+            episodeTerbaru = "Episode 2"
+        ),
+        AnimeTerbaru(
+            titleTerbaru = "Demonslayer Season 2",
+            imgTerbaru = R.drawable.demonslayer,
             ratingTerbaru = "8.55",
             episodeTerbaru = "Episode 2"
         ),
