@@ -23,11 +23,9 @@ class MainActivity : AppCompatActivity() {
         recyclerviewpopular.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
         val recyclerviewterbaru = findViewById<RecyclerView>(R.id.rvTerbaru)
         recyclerviewterbaru.layoutManager = GridLayoutManager(this, 3)
-        val animePopularList = AnimeDummyData.animePopular
-        val animeTerbaruList = AnimeDummyData.animeTerbaru
-        val adapterTerbaru = AnimeTerbaruAdapter(animeTerbaruList)
+        val adapterTerbaru = AnimeTerbaruAdapter(AnimeDummyData.animeTerbaru)
         recyclerviewterbaru.adapter = adapterTerbaru
-        val adapterPopular = AnimeAdapter(animePopularList)
+        val adapterPopular = AnimeAdapter(AnimeDummyData.animePopular)
         recyclerviewpopular.adapter = adapterPopular
     }
 }
