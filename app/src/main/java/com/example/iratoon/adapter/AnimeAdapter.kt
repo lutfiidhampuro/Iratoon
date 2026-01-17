@@ -9,8 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.iratoon.model.AnimeDetail
 import com.example.iratoon.R
 import com.bumptech.glide.Glide
+import com.example.iratoon.model.AnimePopular
 
-class AnimeAdapter(private val animeList: List<AnimeDetail>): RecyclerView.Adapter<AnimeAdapter.ViewHolder>() {
+class AnimeAdapter(private val animeList: List<AnimePopular>): RecyclerView.Adapter<AnimeAdapter.ViewHolder>() {
 
     class ViewHolder(itemview: View): RecyclerView.ViewHolder(itemview){
     val tvTitle =itemview.findViewById<TextView>(R.id.tvTitle)
@@ -24,10 +25,10 @@ class AnimeAdapter(private val animeList: List<AnimeDetail>): RecyclerView.Adapt
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val anime = animeList[position]
-        holder.tvTitle.text = anime.title
+        holder.tvTitle.text = anime.titlePopular
 
         Glide.with(holder.itemView.context)
-            .load(anime.image)
+            .load(anime.imgPopular)
             .into(holder.img)
 
     }

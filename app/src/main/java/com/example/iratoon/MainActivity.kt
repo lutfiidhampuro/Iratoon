@@ -5,10 +5,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.iratoon.R
 import com.example.iratoon.adapter.AnimeAdapter
+import com.example.iratoon.adapter.AnimeTerbaruAdapter
 import com.example.iratoon.data.AnimeDummyData
 
 class MainActivity : AppCompatActivity() {
@@ -19,8 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerviewpopular = findViewById<RecyclerView>(R.id.rvPopular)
         recyclerviewpopular.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
-        val animeList = AnimeDummyData.AnimeDetail
-        val adapter = AnimeAdapter(animeList)
-        recyclerviewpopular.adapter = adapter
+        val recyclerviewterbaru = findViewById<RecyclerView>(R.id.rvTerbaru)
+        recyclerviewterbaru.layoutManager = GridLayoutManager(this, 3)
+        val animePopularList = AnimeDummyData.animePopular
+        val animeTerbaruList = AnimeDummyData.animeTerbaru
+        val adapterTerbaru = AnimeTerbaruAdapter(animeTerbaruList)
+        recyclerviewterbaru.adapter = adapterTerbaru
+        val adapterPopular = AnimeAdapter(animePopularList)
+        recyclerviewpopular.adapter = adapterPopular
     }
 }
