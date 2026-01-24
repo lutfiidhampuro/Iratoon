@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_menu"
+        android:title="Home"
+        android:icon="@drawable/home_icon"/>
+
+    <item
+        android:id="@+id/popular_menu"
+        android:title="Anime Popular"
+        android:icon="@drawable/popular_icon"/>
+
+    <item
+        android:id="@+id/terbaru_menu"
+        android:title="Anime Terbaru"
+        android:icon="@drawable/terbaru_icon"/>
+
+</menu>

@@ -30,6 +30,11 @@ class DetailAnime : AppCompatActivity() {
             .load(imageRes)
             .into(img)
 
+        val btnBack = findViewById<ImageView>(R.id.backButton)
+        btnBack.setOnClickListener {
+            finish()
+        }
+
 
     }
 }
